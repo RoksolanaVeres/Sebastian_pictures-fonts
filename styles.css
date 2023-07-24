@@ -1,0 +1,206 @@
+@font-face {
+  font-family: Ogg;
+  src: url("fonts/OggRegular.woff2") format("woff2"),
+    url("fonts/OggRegular.woff") format("woff"),
+    url("fonts/OggRegular.otf") format("opentype"),
+    url("fonts/OggRegular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: Ogg;
+  src: url("fonts/OggMediumItalic.woff2") format("woff2"),
+    url("fonts/OggMediumItalic.woff") format("woff"),
+    url("fonts/OggMediumItalic.otf") format("opentype"),
+    url("fonts/OggMediumItalic.ttf") format("ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Ogg;
+  src: url("fonts/OggLightItalic.woff2") format("woff2"),
+    url("fonts/OggLightItalic.woff") format("woff"),
+    url("fonts/OggLightItalic.otf") format("opentype"),
+    url("fonts/OggLightItalic.ttf") format("ttf");
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "TradeGothic LT Extended";
+  src: url("fonts/Trade\ Gothic\ LT\ Extended.woff2") format("woff2"),
+    url("fonts/Trade\ Gothic\ LT\ Extended.woff") format("woff"),
+    url("fonts/Trade\ Gothic\ LT\ Extended.otf") format("opentype"),
+    url("fonts/Trade\ Gothic\ LT\ Extended.ttf") format("ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "TradeGothic LT Extended", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.convergence {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.convergence .text {
+  padding: 7% 0 7% 4%;
+}
+
+h1 {
+  font-family: Ogg, serif;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+  color: #000000;
+  max-width: 80%;
+}
+
+.big-screen {
+  display: none;
+}
+
+.zen-meditation {
+  color: rgba(113, 135, 14, 1);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.information {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+  opacity: 0.85;
+  margin-top: 26px;
+  max-width: 90%;
+}
+
+.read-more {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.line {
+  font-weight: 300;
+  font-size: 96px;
+  color: #d0a049;
+  margin-left: 40px;
+}
+
+.read-more p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #cd9a3d;
+}
+
+.images {
+  position: relative;
+  overflow-x: clip;
+  margin: 0 auto;
+}
+
+.small-img {
+  position: absolute;
+  top: 63%;
+  left: 44%;
+}
+
+@media (min-width: 450px) {
+  br {
+    display: none;
+  }
+}
+
+@media (min-width: 920px) {
+  .convergence {
+    grid-template-columns: 1fr 1fr;
+    margin: 5% 0;
+  }
+
+  .images {
+    margin: 0;
+  }
+
+  h1 {
+    margin-right: 5%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .subheader {
+    display: inline-block;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #000000;
+    opacity: 0.55;
+  }
+
+  h1 {
+    font-size: 60px;
+    line-height: 64px;
+    text-align: start;
+    max-width: 100%;
+    padding-bottom: 12%;
+  }
+
+  .italic {
+    font-weight: 900;
+  }
+
+  .convergence .text {
+    padding: 10% 0 7% 19%;
+  }
+
+  .small-img {
+    top: 32%;
+    left: 47%;
+  }
+
+  .images {
+    overflow-x: unset;
+  }
+
+  .read-more {
+    justify-content: start;
+  }
+
+  .read-more p {
+    align-self: center;
+    margin-top: 20px;
+    margin-left: 31px;
+  }
+
+  .aside {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #71870e;
+    opacity: 0.8;
+    margin-top: 10%;
+    margin-left: 17%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .information {
+    max-width: 60%;
+    margin-left: 25%;
+  }
+}
